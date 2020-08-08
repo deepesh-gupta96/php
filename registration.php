@@ -15,6 +15,8 @@
 
 		<forma action= "registration.php" method = "post">
 
+			<?php include('error.php') ?>
+
 			<div>
 				
 				<label for="username">Username</label>
