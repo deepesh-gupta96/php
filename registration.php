@@ -40,7 +40,12 @@
 
 			</div>
 
-			<button type="submit">Submit</button>
+			<button type="submit" name="register_user">Submit</button>
+
+			<p>Already a user? <a href="login.php">Login</a></p>
+
+
+
 		</form>
 
 

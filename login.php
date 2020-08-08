@@ -29,7 +29,7 @@
 			</div>
 
 			
-			<button type="submit">Login</button>
+			<button type="submit" name="login_user">Login</button>
 
 			<p>Not a user? <a href="registration.php">Register here</a></p>
 
