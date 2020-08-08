@@ -25,6 +25,20 @@ if (empty(email)) {array_push($errors,"Email is required")};
 if (empty(password_1)) {array_push($errors, "Password is required")};
 if (password_1 != password_2) {echo "password 1 not same as password_2";}
 
+//Check db for existing with same username
+
+$user_check_query = "SELECT * FROM user WHERE username = '$username' or email = '$email' LIMIT 1";
+$result = mysqli_query($db, $user_check_query);
+$user = mysqli_fetch_assoc($result);
+
+if ($user) {
+	if ($user['username']=== $username) { array_push($errors, "USername already exists");}
+	if ($email['email'] === $email){array_push($errors, "email already exists with username")}
+}
+
+
+
+
 
 
 
