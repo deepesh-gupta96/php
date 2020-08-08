@@ -16,27 +16,27 @@
 			<div>
 				
 				<label for="username">Username</label>
-				<input type="text" name="username">
+				<input type="text" name="username" required>
 
 			</div>
 
 			<div>
 				
 				<label for="email">Email:</label>
-				<input type="email" name="email">
+				<input type="email" name="email" required>
 			</div>
 
 			<div>
 				
 				<label for="password">Password</label>
-				<input type="password" name="password">
+				<input type="password" name="password" required>
 
 			</div>
 
 			<div>
 				
 				<label for="password">Comfirm Password</label>
-				<input type="password" name="password">
+				<input type="password" name="password" required>
 
 			</div>
 
