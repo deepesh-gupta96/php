@@ -8,7 +8,7 @@
 	<div class="container">
 		<div class="header">
 			
-			<h2>Register</h2>
+			<h2>Login</h2>
 		</div>
 
 		<forma action= "registration.php" method = "post">
