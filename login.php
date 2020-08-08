@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registration</title>
+	<title>Login</title>
 
 
 </head>
@@ -15,7 +15,7 @@
 			<h2>Log In</h2>
 		</div>
 
-		<forma action= "registration.php" method = "post">
+		<forma action= "login.php" method = "post">
 
 			<div>
 				
