@@ -29,14 +29,14 @@
 			<div>
 				
 				<label for="password">Password</label>
-				<input type="password" name="password" required>
+				<input type="password" name="password_1" required>
 
 			</div>
 
 			<div>
 				
 				<label for="password">Comfirm Password</label>
-				<input type="password" name="password" required>
+				<input type="password" name="password_2" required>
 
 			</div>
 
