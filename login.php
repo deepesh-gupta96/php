@@ -1,7 +1,11 @@
+<?php include('server.php') ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Registration</title>
+
+
 </head>
 <body>
 
