@@ -5,7 +5,7 @@
 
 		<p><?php echo $error ?></p>
 
-	<?php endforeach ?>
+		<?php endforeach ?>
 
-	</div>
+</div>
 <?php endif ?>

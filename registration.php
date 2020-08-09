@@ -13,9 +13,9 @@
 			<h2>Register</h2>
 		</div>
 
-		<forma action= "registration.php" method = "post">
+		<form action= "registration.php" method="POST">
 
-			<?php include('error.php') ?>
+	<?php include('errors.php') ?>   	
 
 			<div>
 				
@@ -44,9 +44,9 @@
 
 			</div>
 
-			<button type="submit" name="register_user">Submit</button>
+			<button type="submit" name="reg_user"> Submit </button>
 
-			<p>Already a user? <a href="login.php">Login</a></p>
+			<p>Already a user? <a href="login.php"><b>Login</b></a></p>
 
 
 

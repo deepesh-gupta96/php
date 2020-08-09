@@ -15,7 +15,7 @@
 			<h2>Log In</h2>
 		</div>
 
-		<forma action= "login.php" method = "post">
+		<form action= "login.php" method ="POST">
 
 			<div>
 				

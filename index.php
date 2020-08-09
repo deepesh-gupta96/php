@@ -3,7 +3,8 @@
 session_start();
 
 if (isset($_SESSION['username'])) {
-	$_SESSION['message'] = 'You must login first to view the page';
+	$_SESSION['msg'] = "You must login first to view the page";
+	header('location:login.php');
 }
 
 if (isset($_GET['logout'])) {
@@ -23,14 +24,13 @@ if (isset($_GET['logout'])) {
 <h1>Welcome to the page</h1>
 
 <?php 
-if(isset($_SESSION['sucsess'])); ?>
+if(isset($_SESSION['success'])): ?>
 
 <div>
 	
 	<h3>
 		
-		<<?php 
-
+		<?php 
 		echo $_SESSION['success'];
 		unset($_SESSION['success']);
 
@@ -42,16 +42,14 @@ if(isset($_SESSION['sucsess'])); ?>
 
 //if the user login in print information
 
-<?php
-
-if (isset($_SESSION['username']));?>
+<?php if (isset($_SESSION['username'])): ?>
 
 <h3>Welcome <strong><?php echo $_SESSION['username'];?></strong></h3>
 
-<button><a href="index.php?logout = 1">Logout</a></button> 
+<button><a href="index.php?logout = '1'">Logout</a></button> 
 
 <?php endif ?>
-
+</body>
 
 </body>
 </html>
