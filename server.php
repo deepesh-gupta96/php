@@ -14,6 +14,9 @@ $db = mysqli_connect('localhost','root','','practice') or die('could not connect
 
 
 //Register user
+if (isset($_POST['reg_user'])) {
+	# code...
+
 $username = mysqli_real_escape_string($db, $_POST['username']);
 $email = mysqli_real_escape_string($db, $_POST['email']);
 $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
@@ -51,7 +54,7 @@ if(count($errors) == 0){
 	$_SESSION['success'] = "You are now logged in";
 	header('location: index.php');
 }
-
+}
 
 //Login users
 

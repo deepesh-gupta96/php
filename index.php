@@ -2,7 +2,7 @@
 
 session_start();
 
-if (isset($_SESSION['username'])) {
+if (!isset($_SESSION['username'])) {
 	$_SESSION['msg'] = "You must login first to view the page";
 	header('location:login.php');
 }
@@ -39,8 +39,6 @@ if(isset($_SESSION['success'])): ?>
 </div>
 
 <?php endif ?>
-
-//if the user login in print information
 
 <?php if (isset($_SESSION['username'])): ?>
 
